@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gautam | Full Stack Dev</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Gautam<span class="dot"> <span>Kumar</span></span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#notes">Scratchpad</a></li>
+            <li><a href="#contact" class="btn-contact">Hire Me</a></li>
+        </ul>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <span class="badge">👋 Welcome to my portfolio</span>
+            <h1>Building Digital <br> <span class="gradient-text">Experiences</span></h1>
+            <p>I am a <strong>Full Stack Developer</strong> passionate about building accessible, pixel-perfect, and
+                performant web applications.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn primary">View Projects <i class="fas fa-arrow-right"></i></a>
+                <a href="https://github.com/theunstopabble" target="_blank" class="btn secondary"><i
+                        class="fab fa-github"></i>
+                    GitHub</a>
+            </div>
+
+            <div class="tech-stack">
+                <span>Tech Stack:</span>
+                <i class="fab fa-html5" title="HTML5"></i>
+                <i class="fab fa-css3-alt" title="CSS3"></i>
+                <i class="fab fa-js" title="JavaScript"></i>
+                <i class="fab fa-react" title="React"></i>
+                <i class="fab fa-node" title="Node.js"></i>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Coding Setup" style="border-radius: 20px;">
+        </div>
+    </header>
+
+    <section id="projects" class="section">
+        <div class="section-header">
+            <h2>Featured Projects</h2>
+            <p>Check out some of my recent work</p>
+        </div>
+
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web App</button>
+            <button class="filter-btn" data-filter="mobile">Mobile App</button>
+            <button class="filter-btn" data-filter="design">UI/UX</button>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card" data-category="web">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Web Project">
+                    <div class="overlay">
+                        <a href="#" class="icon-btn"><i class="fas fa-link"></i></a>
+                        <a href="https://github.com/theunstopabble" target="_blank" class="icon-btn"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>SwadKart Food App</h3>
+                    <p>A full-stack food delivery platform with real-time tracking.</p>
+                    <div class="tags">
+                        <span>React</span><span>Node</span><span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="mobile">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="App Project">
+                    <div class="overlay">
+                        <a href="#" class="icon-btn"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Fitness Tracker</h3>
+                    <p>Mobile application to track daily workouts and diet.</p>
+                    <div class="tags">
+                        <span>React Native</span><span>Firebase</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Portfolio Project">
+                    <div class="overlay">
+                        <a href="https://github.com/theunstopabble" target="_blank" class="icon-btn"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Portfolio Website</h3>
+                    <p>Personal portfolio with dark mode and animations.</p>
+                    <div class="tags">
+                        <span>HTML</span><span>CSS</span><span>JS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="design">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Design Project">
+                    <div class="overlay">
+                        <a href="#" class="icon-btn"><i class="fab fa-behance"></i></a>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Brand Identity</h3>
+                    <p>Modern UI/UX design system for a fintech startup.</p>
+                    <div class="tags">
+                        <span>Figma</span><span>Adobe XD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="notes" class="section dark-section">
+        <div class="container">
+            <div class="notes-layout">
+                <div class="notes-text">
+                    <h2>👨‍💻 Developer's <span class="gradient-text">Scratchpad</span></h2>
+                    <p>Need to save a code snippet or a quick idea? Use this browser-based notepad. Data is saved
+                        automatically!</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> LocalStorage Integration</li>
+                        <li><i class="fas fa-check-circle"></i> Persists after refresh</li>
+                        <li><i class="fas fa-check-circle"></i> Private & Secure</li>
+                    </ul>
+                </div>
+                <div class="notes-editor">
+                    <div class="editor-header">
+                        <div class="dots">
+                            <span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span>
+                        </div>
+                        <span class="filename">notes.txt</span>
+                        <span id="saveStatus" class="status">Auto-saved</span>
+                    </div>
+                    <textarea id="noteInput" placeholder="// Write your code or notes here..."></textarea>
+                    <div class="editor-footer">
+                        <button onclick="clearNotes()" class="clear-btn"><i class="fas fa-trash"></i> Clear</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h2>Let's Work Together</h2>
+            <p>Have a project in mind? Let's build something amazing.</p>
+            <a href="mailto:gautam@example.com" class="email-link">gautam@example.com</a>
+
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/gautamkr62/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/theunstopabble" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/_unstopabble" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+
+            <p class="copyright">© 2026 Gautam Kumar. Built for ApexPlanet Task 4.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
